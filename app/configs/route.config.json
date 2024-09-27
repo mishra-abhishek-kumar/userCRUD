@@ -1,0 +1,46 @@
+{
+	"routes": [
+		{
+			"route": "/api/v1/user",
+			"method": "POST",
+			"controller": "../components/user/controller/UserController.js",
+			"secured": false,
+			"action": "createUser"
+		},
+		{
+			"route": "/api/v1/user",
+			"method": "GET",
+			"controller": "../components/user/controller/UserController.js",
+			"secured": false,
+			"action": "getAllUsers"
+		},
+		{
+			"route": "/api/v1/user/:userId",
+			"method": "PUT",
+			"controller": "../components/user/controller/UserController.js",
+			"secured": false,
+			"action": "updateUser"
+		},
+		{
+			"route": "/api/v1/user/:userId",
+			"method": "DELETE",
+			"controller": "../components/user/controller/UserController.js",
+			"secured": false,
+			"action": "deleteUser"
+		},
+		{
+			"route": "/api/v1/department",
+			"method": "POST",
+			"controller": "../components/department/controller/DepartmentController.js",
+			"secured": false,
+			"action": "post"
+		},
+		{
+			"route": "/api/v1/department",
+			"method": "GET",
+			"controller": "../components/department/controller/DepartmentController.js",
+			"secured": false,
+			"action": "getA"
+		}
+	]
+}
